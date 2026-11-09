@@ -1,0 +1,95 @@
+version = "1.0"
+
+[metadata]
+name        = "v1-heavy-20-55dcdddf"
+description = "AOS-Bench V1.0 heavy workload, 20 tasks"
+author      = "AOS-Bench"
+
+[environment]
+cpus           = 4
+memory_mb      = 8192
+allow_internet = true
+docker_image   = "zhuerle/aosbench:v1-heavy-20-55dcdddf"
+
+[session]
+max_steps = 360
+
+[[arrivals]]
+arrive_wall_time   = 0
+task_id            = "skillsbench-video-filler-word-remover"
+
+[[arrivals]]
+arrive_wall_time   = 39
+task_id            = "tb2-mcmc-sampling-stan"
+
+[[arrivals]]
+arrive_wall_time   = 102
+task_id            = "onebrc-onebrc-400m"
+
+[[arrivals]]
+arrive_wall_time   = 116
+task_id            = "tb2-winning-avg-corewars"
+
+[[arrivals]]
+arrive_wall_time   = 184
+task_id            = "tb3-satb-audio-transcription"
+
+[[arrivals]]
+arrive_wall_time   = 261
+task_id            = "skillsbench-energy-ac-optimal-power-flow"
+
+[[arrivals]]
+arrive_wall_time   = 337
+task_id            = "tb3-interleaved-vigenere"
+
+[[arrivals]]
+arrive_wall_time   = 376
+task_id            = "tb2-tune-mjcf"
+
+[[arrivals]]
+arrive_wall_time   = 424
+task_id            = "tb2-make-mips-interpreter"
+
+[[arrivals]]
+arrive_wall_time   = 437
+task_id            = "wildclawbench-02_Code_Intelligence_task_6_benchmark_vlmeval_ocrbench_zh"
+
+[[arrivals]]
+arrive_wall_time   = 487
+task_id            = "tb2-caffe-cifar-10"
+
+[[arrivals]]
+arrive_wall_time   = 535
+task_id            = "tb3-telecom-entity-resolution"
+
+[[arrivals]]
+arrive_wall_time   = 591
+task_id            = "tb2-train-fasttext"
+
+[[arrivals]]
+arrive_wall_time   = 643
+task_id            = "tb3-pretrain-shard-corruption"
+
+[[arrivals]]
+arrive_wall_time   = 681
+task_id            = "skillsbench-syzkaller-ppdev-syzlang"
+
+[[arrivals]]
+arrive_wall_time   = 703
+task_id            = "skillsbench-jpg-ocr-stat"
+
+[[arrivals]]
+arrive_wall_time   = 750
+task_id            = "tb2-fix-ocaml-gc"
+
+[[arrivals]]
+arrive_wall_time   = 815
+task_id            = "skillsbench-energy-market-pricing"
+
+[[arrivals]]
+arrive_wall_time   = 856
+task_id            = "skillsbench-seismic-phase-picking"
+
+[[arrivals]]
+arrive_wall_time   = 913
+task_id            = "terminalworld-tw_570033"

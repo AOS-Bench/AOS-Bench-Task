@@ -1,0 +1,95 @@
+version = "1.0"
+
+[metadata]
+name        = "v1-heavy-20-8f01193a"
+description = "AOS-Bench V1.0 heavy workload, 20 tasks"
+author      = "AOS-Bench"
+
+[environment]
+cpus           = 4
+memory_mb      = 8192
+allow_internet = true
+docker_image   = "zhuerle/aosbench:v1-heavy-20-8f01193a"
+
+[session]
+max_steps = 360
+
+[[arrivals]]
+arrive_wall_time   = 0
+task_id            = "skillsbench-python-scala-translation"
+
+[[arrivals]]
+arrive_wall_time   = 73
+task_id            = "tb2-compile-compcert"
+
+[[arrivals]]
+arrive_wall_time   = 154
+task_id            = "tb2-mcmc-sampling-stan"
+
+[[arrivals]]
+arrive_wall_time   = 187
+task_id            = "tb2-model-extraction-relu-logits"
+
+[[arrivals]]
+arrive_wall_time   = 207
+task_id            = "tb2-overfull-hbox"
+
+[[arrivals]]
+arrive_wall_time   = 272
+task_id            = "tb2-schemelike-metacircular-eval"
+
+[[arrivals]]
+arrive_wall_time   = 312
+task_id            = "tb3-biped-contact-dynamics"
+
+[[arrivals]]
+arrive_wall_time   = 391
+task_id            = "tb3-react-lead-form"
+
+[[arrivals]]
+arrive_wall_time   = 446
+task_id            = "terminalworld-tw_593620"
+
+[[arrivals]]
+arrive_wall_time   = 502
+task_id            = "wildclawbench-01_Productivity_Flow_task_8_real_image_category"
+
+[[arrivals]]
+arrive_wall_time   = 594
+task_id            = "skillsbench-energy-ac-optimal-power-flow"
+
+[[arrivals]]
+arrive_wall_time   = 610
+task_id            = "skillsbench-jpg-ocr-stat"
+
+[[arrivals]]
+arrive_wall_time   = 654
+task_id            = "skillsbench-video-filler-word-remover"
+
+[[arrivals]]
+arrive_wall_time   = 699
+task_id            = "tb2-caffe-cifar-10"
+
+[[arrivals]]
+arrive_wall_time   = 778
+task_id            = "tb2-fix-ocaml-gc"
+
+[[arrivals]]
+arrive_wall_time   = 857
+task_id            = "tb2-train-fasttext"
+
+[[arrivals]]
+arrive_wall_time   = 913
+task_id            = "tb3-interleaved-vigenere"
+
+[[arrivals]]
+arrive_wall_time   = 931
+task_id            = "terminalworld-tw_570033"
+
+[[arrivals]]
+arrive_wall_time   = 995
+task_id            = "wildclawbench-02_Code_Intelligence_task_6_benchmark_vlmeval_ocrbench_zh"
+
+[[arrivals]]
+arrive_wall_time   = 1053
+task_id            = "tb3-hof-topology-interpenetration"

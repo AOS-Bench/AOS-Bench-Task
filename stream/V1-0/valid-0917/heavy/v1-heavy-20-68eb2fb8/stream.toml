@@ -1,0 +1,95 @@
+version = "1.0"
+
+[metadata]
+name        = "v1-heavy-20-68eb2fb8"
+description = "AOS-Bench V1.0 heavy workload, 20 tasks"
+author      = "AOS-Bench"
+
+[environment]
+cpus           = 4
+memory_mb      = 8192
+allow_internet = true
+docker_image   = "zhuerle/aosbench:v1-heavy-20-68eb2fb8"
+
+[session]
+max_steps = 360
+
+[[arrivals]]
+arrive_wall_time   = 0
+task_id            = "aos-synth-v1-c-project-fix-loop"
+
+[[arrivals]]
+arrive_wall_time   = 73
+task_id            = "compilebench-curl-ssl-arm64-static-heavy"
+
+[[arrivals]]
+arrive_wall_time   = 154
+task_id            = "skillsbench-seismic-phase-picking"
+
+[[arrivals]]
+arrive_wall_time   = 187
+task_id            = "tb2-mcmc-sampling-stan"
+
+[[arrivals]]
+arrive_wall_time   = 207
+task_id            = "tb2-model-extraction-relu-logits"
+
+[[arrivals]]
+arrive_wall_time   = 272
+task_id            = "tb2-regex-chess"
+
+[[arrivals]]
+arrive_wall_time   = 312
+task_id            = "tb2-winning-avg-corewars"
+
+[[arrivals]]
+arrive_wall_time   = 391
+task_id            = "tb3-biped-contact-dynamics"
+
+[[arrivals]]
+arrive_wall_time   = 446
+task_id            = "tb3-telecom-entity-resolution"
+
+[[arrivals]]
+arrive_wall_time   = 502
+task_id            = "wildclawbench-04_Search_Retrieval_task_2_conflicting_handling"
+
+[[arrivals]]
+arrive_wall_time   = 594
+task_id            = "aos-synth-v1-compression-pareto"
+
+[[arrivals]]
+arrive_wall_time   = 610
+task_id            = "aos-synth-v1-primesieve-pi-1e13"
+
+[[arrivals]]
+arrive_wall_time   = 654
+task_id            = "skillsbench-energy-ac-optimal-power-flow"
+
+[[arrivals]]
+arrive_wall_time   = 699
+task_id            = "skillsbench-jpg-ocr-stat"
+
+[[arrivals]]
+arrive_wall_time   = 778
+task_id            = "skillsbench-video-filler-word-remover"
+
+[[arrivals]]
+arrive_wall_time   = 857
+task_id            = "tb2-fix-ocaml-gc"
+
+[[arrivals]]
+arrive_wall_time   = 913
+task_id            = "tb2-train-fasttext"
+
+[[arrivals]]
+arrive_wall_time   = 931
+task_id            = "tb3-hof-topology-interpenetration"
+
+[[arrivals]]
+arrive_wall_time   = 995
+task_id            = "tb3-interleaved-vigenere"
+
+[[arrivals]]
+arrive_wall_time   = 1053
+task_id            = "terminalworld-tw_570033"

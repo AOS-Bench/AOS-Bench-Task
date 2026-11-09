@@ -1,0 +1,135 @@
+version = "1.0"
+
+[metadata]
+name        = "v1-hplus-30-5d6b759c"
+description = "AOS-Bench V1.0 heavy-plus workload, 30 tasks"
+author      = "AOS-Bench"
+
+[environment]
+cpus           = 4
+memory_mb      = 8192
+allow_internet = true
+docker_image   = "zhuerle/aosbench:v1-hplus-30-5d6b759c"
+
+[session]
+max_steps = 360
+
+[[arrivals]]
+arrive_wall_time   = 0
+task_id            = "tb3-hof-topology-interpenetration"
+
+[[arrivals]]
+arrive_wall_time   = 84
+task_id            = "tb2-regex-chess"
+
+[[arrivals]]
+arrive_wall_time   = 100
+task_id            = "tb2-circuit-fibsqrt"
+
+[[arrivals]]
+arrive_wall_time   = 195
+task_id            = "tb3-sglang-qwen-burst"
+
+[[arrivals]]
+arrive_wall_time   = 217
+task_id            = "tb2-schemelike-metacircular-eval"
+
+[[arrivals]]
+arrive_wall_time   = 316
+task_id            = "tb2-train-fasttext"
+
+[[arrivals]]
+arrive_wall_time   = 403
+task_id            = "skillsbench-syzkaller-ppdev-syzlang"
+
+[[arrivals]]
+arrive_wall_time   = 487
+task_id            = "tb2-mcmc-sampling-stan"
+
+[[arrivals]]
+arrive_wall_time   = 553
+task_id            = "aos-synth-v1-c-project-fix-loop"
+
+[[arrivals]]
+arrive_wall_time   = 618
+task_id            = "tb2-circuit-fibsqrt-2"
+
+[[arrivals]]
+arrive_wall_time   = 696
+task_id            = "aos-synth-v1-c-project-fix-loop-2"
+
+[[arrivals]]
+arrive_wall_time   = 743
+task_id            = "tb2-caffe-cifar-10"
+
+[[arrivals]]
+arrive_wall_time   = 797
+task_id            = "tb2-regex-chess-2"
+
+[[arrivals]]
+arrive_wall_time   = 931
+task_id            = "tb2-tune-mjcf"
+
+[[arrivals]]
+arrive_wall_time   = 1015
+task_id            = "skillsbench-jpg-ocr-stat"
+
+[[arrivals]]
+arrive_wall_time   = 1123
+task_id            = "tb2-circuit-fibsqrt-3"
+
+[[arrivals]]
+arrive_wall_time   = 1220
+task_id            = "aos-synth-v1-primesieve-pi-1e13"
+
+[[arrivals]]
+arrive_wall_time   = 1300
+task_id            = "tb2-schemelike-metacircular-eval-2"
+
+[[arrivals]]
+arrive_wall_time   = 1373
+task_id            = "aos-synth-v1-compression-pareto"
+
+[[arrivals]]
+arrive_wall_time   = 1463
+task_id            = "tb2-tune-mjcf-2"
+
+[[arrivals]]
+arrive_wall_time   = 1555
+task_id            = "tb2-regex-chess-3"
+
+[[arrivals]]
+arrive_wall_time   = 1645
+task_id            = "skillsbench-video-filler-word-remover"
+
+[[arrivals]]
+arrive_wall_time   = 1741
+task_id            = "tb2-regex-chess-4"
+
+[[arrivals]]
+arrive_wall_time   = 1754
+task_id            = "tb2-caffe-cifar-10-2"
+
+[[arrivals]]
+arrive_wall_time   = 1828
+task_id            = "tb2-llm-inference-batching-scheduler"
+
+[[arrivals]]
+arrive_wall_time   = 1848
+task_id            = "skillsbench-energy-ac-optimal-power-flow"
+
+[[arrivals]]
+arrive_wall_time   = 1896
+task_id            = "tb2-compile-compcert"
+
+[[arrivals]]
+arrive_wall_time   = 1951
+task_id            = "tb3-sglang-qwen-burst-2"
+
+[[arrivals]]
+arrive_wall_time   = 2008
+task_id            = "tb2-llm-inference-batching-scheduler-3"
+
+[[arrivals]]
+arrive_wall_time   = 2074
+task_id            = "tb2-llm-inference-batching-scheduler-2"

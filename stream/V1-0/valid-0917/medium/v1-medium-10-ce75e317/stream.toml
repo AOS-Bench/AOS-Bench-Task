@@ -1,0 +1,55 @@
+version = "1.0"
+
+[metadata]
+name        = "v1-medium-10-ce75e317"
+description = "AOS-Bench V1.0 medium workload, 10 tasks"
+author      = "AOS-Bench"
+
+[environment]
+docker_image   = "zhuerle/aosbench:v1-medium-10-ce75e317"
+cpus           = 4
+memory_mb      = 8192
+allow_internet = true
+
+[session]
+max_steps = 360
+
+[[arrivals]]
+arrive_wall_time   = 0
+task_id            = "tb2-make-doom-for-mips"
+
+[[arrivals]]
+arrive_wall_time   = 74
+task_id            = "compilebench-curl-ssl-arm64-static-heavy"
+
+[[arrivals]]
+arrive_wall_time   = 181
+task_id            = "tb2-mcmc-sampling-stan"
+
+[[arrivals]]
+arrive_wall_time   = 214
+task_id            = "tb2-winning-avg-corewars"
+
+[[arrivals]]
+arrive_wall_time   = 250
+task_id            = "compileagent-botan-3-5-0"
+
+[[arrivals]]
+arrive_wall_time   = 307
+task_id            = "tb2-sam-cell-seg"
+
+[[arrivals]]
+arrive_wall_time   = 421
+task_id            = "tb2-compile-compcert"
+
+[[arrivals]]
+arrive_wall_time   = 493
+task_id            = "tb2-schemelike-metacircular-eval"
+
+[[arrivals]]
+arrive_wall_time   = 544
+task_id            = "compilebench-curl-ssl-arm64-static"
+
+[[arrivals]]
+arrive_wall_time   = 597
+task_id            = "onebrc-onebrc-400m"

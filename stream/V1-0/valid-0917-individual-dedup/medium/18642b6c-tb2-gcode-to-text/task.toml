@@ -1,0 +1,36 @@
+schema_version = "1.1"
+
+# Generated from the parent stream's stream.toml.
+[metadata]
+setting             = "individual"
+task_id             = "tb2-gcode-to-text"
+parent_stream       = "v1-medium-10-18642b6c"
+parent_stream_tier  = "medium"
+parent_stream_n     = 10
+arrive_wall_time    = 337  # in the parent stream; unused here
+dedup               = true
+individual_bucket   = "medium"
+instruction_variant = 1
+instruction_variants = 1
+instruction_sha     = "93e25bffea56"
+
+# One grader, run once -- see VERIFIER_SEC in the generator for why
+# harbor's 600s default is not enough.
+[verifier]
+timeout_sec = 1800.0
+
+[agent]
+timeout_sec = 5400.0
+
+# Copied verbatim from the parent stream's [environment] so the only
+# difference from the stream setting is that this task arrives alone:
+# same image, same cores, same memory, same network policy.
+[environment]
+docker_image   = "zhuerle/aosbench:v1-medium-10-18642b6c"
+cpus           = 4
+memory_mb      = 8192
+allow_internet = true
+build_timeout_sec = 600.0
+# Pinned rather than inferred: the sandbox backend falls back to /app
+# when it cannot read a WORKDIR, which would break every grader.
+workdir        = "/workspace"

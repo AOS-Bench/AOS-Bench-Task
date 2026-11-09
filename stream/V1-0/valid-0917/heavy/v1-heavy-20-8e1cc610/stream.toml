@@ -1,0 +1,98 @@
+version = "1.0"
+
+[metadata]
+name        = "v1-heavy-20-8e1cc610"
+description = "AOS-Bench V1.0 heavy workload, 20 tasks"
+author      = "AOS-Bench"
+
+[environment]
+cpus           = 4
+memory_mb      = 8192
+allow_internet = true
+# The image installs torch 2.4.1 (see environment/Dockerfile). torch 2.3.1+cpu
+# segfaults in torchrun's c10d rendezvous (exit 139), which left
+# tb3-pretrain-shard-corruption unscoreable for its reference solution.
+docker_image   = "zhuerle/aosbench:v1-heavy-20-8e1cc610"
+
+[session]
+max_steps = 360
+
+[[arrivals]]
+arrive_wall_time   = 0
+task_id            = "pareval-46_sparse_la_spmm-2"
+
+[[arrivals]]
+arrive_wall_time   = 54
+task_id            = "tb2-caffe-cifar-10"
+
+[[arrivals]]
+arrive_wall_time   = 119
+task_id            = "skillsbench-energy-ac-optimal-power-flow"
+
+[[arrivals]]
+arrive_wall_time   = 225
+task_id            = "wildclawbench-02_Code_Intelligence_task_6_benchmark_vlmeval_ocrbench_zh-2"
+
+[[arrivals]]
+arrive_wall_time   = 306
+task_id            = "tb2-path-tracing"
+
+[[arrivals]]
+arrive_wall_time   = 382
+task_id            = "tb2-compile-compcert"
+
+[[arrivals]]
+arrive_wall_time   = 422
+task_id            = "terminalworld-tw_570033"
+
+[[arrivals]]
+arrive_wall_time   = 482
+task_id            = "pareval-46_sparse_la_spmm-3"
+
+[[arrivals]]
+arrive_wall_time   = 574
+task_id            = "tb2-llm-inference-batching-scheduler"
+
+[[arrivals]]
+arrive_wall_time   = 612
+task_id            = "tb2-circuit-fibsqrt"
+
+[[arrivals]]
+arrive_wall_time   = 681
+task_id            = "wildclawbench-02_Code_Intelligence_task_6_benchmark_vlmeval_ocrbench_zh-3"
+
+[[arrivals]]
+arrive_wall_time   = 791
+task_id            = "compileagent-ffmpeg-n7-0"
+
+[[arrivals]]
+arrive_wall_time   = 791
+task_id            = "pareval-46_sparse_la_spmm"
+
+[[arrivals]]
+arrive_wall_time   = 819
+task_id            = "tb2-model-extraction-relu-logits"
+
+[[arrivals]]
+arrive_wall_time   = 849
+task_id            = "pareval-46_sparse_la_spmm-4"
+
+[[arrivals]]
+arrive_wall_time   = 850
+task_id            = "wildclawbench-02_Code_Intelligence_task_6_benchmark_vlmeval_ocrbench_zh-4"
+
+[[arrivals]]
+arrive_wall_time   = 879
+task_id            = "wildclawbench-02_Code_Intelligence_task_6_benchmark_vlmeval_ocrbench_zh"
+
+[[arrivals]]
+arrive_wall_time   = 976
+task_id            = "tb3-pretrain-shard-corruption"
+
+[[arrivals]]
+arrive_wall_time   = 1017
+task_id            = "tb2-fix-ocaml-gc"
+
+[[arrivals]]
+arrive_wall_time   = 1109
+task_id            = "skillsbench-gravitational-wave-detection"

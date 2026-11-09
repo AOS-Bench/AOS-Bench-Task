@@ -1,0 +1,55 @@
+version = "1.0"
+
+[metadata]
+name        = "v1-medium-10-18642b6c"
+description = "AOS-Bench V1.0 medium workload, 10 tasks"
+author      = "AOS-Bench"
+
+[environment]
+cpus           = 4
+memory_mb      = 8192
+allow_internet = true
+docker_image   = "zhuerle/aosbench:v1-medium-10-18642b6c"
+
+[session]
+max_steps = 360
+
+[[arrivals]]
+arrive_wall_time   = 0
+task_id            = "tb2-tune-mjcf"
+
+[[arrivals]]
+arrive_wall_time   = 40
+task_id            = "terminalworld-tw_593620"
+
+[[arrivals]]
+arrive_wall_time   = 41
+task_id            = "tb2-llm-inference-batching-scheduler"
+
+[[arrivals]]
+arrive_wall_time   = 96
+task_id            = "compileagent-ffmpeg-n7-0"
+
+[[arrivals]]
+arrive_wall_time   = 166
+task_id            = "skillsbench-energy-market-pricing"
+
+[[arrivals]]
+arrive_wall_time   = 214
+task_id            = "compilebench-coreutils-static"
+
+[[arrivals]]
+arrive_wall_time   = 240
+task_id            = "skillsbench-shock-analysis-supply"
+
+[[arrivals]]
+arrive_wall_time   = 301
+task_id            = "wildclawbench-04_Search_Retrieval_task_2_conflicting_handling"
+
+[[arrivals]]
+arrive_wall_time   = 337
+task_id            = "tb2-gcode-to-text"
+
+[[arrivals]]
+arrive_wall_time   = 364
+task_id            = "compileagent-openssl-3-3-2"

@@ -1,0 +1,55 @@
+version = "1.0"
+
+[metadata]
+name        = "v1-medium-10-63e04653"
+description = "AOS-Bench V1.0 medium workload, 10 tasks"
+author      = "AOS-Bench"
+
+[environment]
+cpus           = 4
+memory_mb      = 8192
+allow_internet = true
+docker_image   = "zhuerle/aosbench:v1-medium-10-63e04653"
+
+[session]
+max_steps = 360
+
+[[arrivals]]
+arrive_wall_time   = 0
+task_id            = "onebrc-onebrc-400m"
+
+[[arrivals]]
+arrive_wall_time   = 26
+task_id            = "compilebench-curl-ssl-arm64-static"
+
+[[arrivals]]
+arrive_wall_time   = 69
+task_id            = "pareval-46_sparse_la_spmm"
+
+[[arrivals]]
+arrive_wall_time   = 186
+task_id            = "tb2-compile-compcert"
+
+[[arrivals]]
+arrive_wall_time   = 256
+task_id            = "terminalworld-tw_593620"
+
+[[arrivals]]
+arrive_wall_time   = 294
+task_id            = "skillsbench-python-scala-translation"
+
+[[arrivals]]
+arrive_wall_time   = 388
+task_id            = "skillsbench-energy-market-pricing"
+
+[[arrivals]]
+arrive_wall_time   = 511
+task_id            = "tb3-vllm-deepseek-streaming"
+
+[[arrivals]]
+arrive_wall_time   = 599
+task_id            = "terminalworld-tw_325403"
+
+[[arrivals]]
+arrive_wall_time   = 659
+task_id            = "tb2-winning-avg-corewars"

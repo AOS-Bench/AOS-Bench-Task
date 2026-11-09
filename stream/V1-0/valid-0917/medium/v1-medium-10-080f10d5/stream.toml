@@ -1,0 +1,55 @@
+version = "1.0"
+
+[metadata]
+name        = "v1-medium-10-080f10d5"
+description = "AOS-Bench V1.0 medium workload, 10 tasks"
+author      = "AOS-Bench"
+
+[environment]
+cpus           = 4
+memory_mb      = 8192
+allow_internet = true
+docker_image   = "zhuerle/aosbench:v1-medium-10-080f10d5"
+
+[session]
+max_steps = 360
+
+[[arrivals]]
+arrive_wall_time   = 0
+task_id            = "compilebench-curl-ssl-arm64-static-heavy"
+
+[[arrivals]]
+arrive_wall_time   = 23
+task_id            = "terminalworld-tw_528959"
+
+[[arrivals]]
+arrive_wall_time   = 95
+task_id            = "tb2-make-mips-interpreter"
+
+[[arrivals]]
+arrive_wall_time   = 123
+task_id            = "pareval-46_sparse_la_spmm"
+
+[[arrivals]]
+arrive_wall_time   = 221
+task_id            = "tb2-winning-avg-corewars"
+
+[[arrivals]]
+arrive_wall_time   = 283
+task_id            = "wildclawbench-04_Search_Retrieval_task_2_conflicting_handling"
+
+[[arrivals]]
+arrive_wall_time   = 321
+task_id            = "skillsbench-seismic-phase-picking"
+
+[[arrivals]]
+arrive_wall_time   = 425
+task_id            = "terminalworld-tw_593620"
+
+[[arrivals]]
+arrive_wall_time   = 515
+task_id            = "tb2-tune-mjcf"
+
+[[arrivals]]
+arrive_wall_time   = 568
+task_id            = "compileagent-botan-3-5-0"

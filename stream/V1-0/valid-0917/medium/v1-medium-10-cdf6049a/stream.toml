@@ -1,0 +1,55 @@
+version = "1.0"
+
+[metadata]
+name        = "v1-medium-10-cdf6049a"
+description = "AOS-Bench V1.0 medium workload, 10 tasks"
+author      = "AOS-Bench"
+
+[environment]
+cpus           = 4
+memory_mb      = 8192
+allow_internet = true
+docker_image   = "zhuerle/aosbench:v1-medium-10-cdf6049a"
+
+[session]
+max_steps = 360
+
+[[arrivals]]
+arrive_wall_time   = 0
+task_id            = "compilebench-curl-ssl-arm64-static"
+
+[[arrivals]]
+arrive_wall_time   = 65
+task_id            = "tb2-compile-compcert"
+
+[[arrivals]]
+arrive_wall_time   = 179
+task_id            = "skillsbench-seismic-phase-picking"
+
+[[arrivals]]
+arrive_wall_time   = 260
+task_id            = "tb2-winning-avg-corewars"
+
+[[arrivals]]
+arrive_wall_time   = 359
+task_id            = "wildclawbench-01_Productivity_Flow_task_8_real_image_category"
+
+[[arrivals]]
+arrive_wall_time   = 417
+task_id            = "tb2-make-mips-interpreter"
+
+[[arrivals]]
+arrive_wall_time   = 436
+task_id            = "terminalworld-tw_593620"
+
+[[arrivals]]
+arrive_wall_time   = 527
+task_id            = "tb2-schemelike-metacircular-eval"
+
+[[arrivals]]
+arrive_wall_time   = 589
+task_id            = "onebrc-onebrc-400m"
+
+[[arrivals]]
+arrive_wall_time   = 637
+task_id            = "tb2-overfull-hbox"

@@ -1,0 +1,55 @@
+version = "1.0"
+
+[metadata]
+name        = "v1-medium-10-7f08b836"
+description = "AOS-Bench V1.0 medium workload, 10 tasks"
+author      = "AOS-Bench"
+
+[environment]
+cpus           = 4
+memory_mb      = 8192
+allow_internet = true
+docker_image   = "zhuerle/aosbench:v1-medium-10-7f08b836"
+
+[session]
+max_steps = 360
+
+[[arrivals]]
+arrive_wall_time   = 0
+task_id            = "skillsbench-seismic-phase-picking"
+
+[[arrivals]]
+arrive_wall_time   = 43
+task_id            = "tb2-model-extraction-relu-logits"
+
+[[arrivals]]
+arrive_wall_time   = 147
+task_id            = "skillsbench-energy-market-pricing"
+
+[[arrivals]]
+arrive_wall_time   = 207
+task_id            = "tb2-winning-avg-corewars"
+
+[[arrivals]]
+arrive_wall_time   = 272
+task_id            = "tb2-tune-mjcf"
+
+[[arrivals]]
+arrive_wall_time   = 300
+task_id            = "terminalworld-tw_593620"
+
+[[arrivals]]
+arrive_wall_time   = 330
+task_id            = "compileagent-botan-3-5-0"
+
+[[arrivals]]
+arrive_wall_time   = 409
+task_id            = "tb2-schemelike-metacircular-eval"
+
+[[arrivals]]
+arrive_wall_time   = 442
+task_id            = "tb2-sam-cell-seg"
+
+[[arrivals]]
+arrive_wall_time   = 503
+task_id            = "onebrc-onebrc-400m"

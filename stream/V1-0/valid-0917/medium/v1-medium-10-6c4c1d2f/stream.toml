@@ -1,0 +1,55 @@
+version = "1.0"
+
+[metadata]
+name        = "v1-medium-10-6c4c1d2f"
+description = "AOS-Bench V1.0 medium workload, 10 tasks"
+author      = "AOS-Bench"
+
+[environment]
+docker_image   = "zhuerle/aosbench:v1-medium-10-6c4c1d2f"
+cpus           = 4
+memory_mb      = 8192
+allow_internet = true
+
+[session]
+max_steps = 360
+
+[[arrivals]]
+arrive_wall_time   = 0
+task_id            = "onebrc-onebrc-400m"
+
+[[arrivals]]
+arrive_wall_time   = 91
+task_id            = "skillsbench-seismic-phase-picking"
+
+[[arrivals]]
+arrive_wall_time   = 154
+task_id            = "compilebench-curl-ssl-arm64-static"
+
+[[arrivals]]
+arrive_wall_time   = 198
+task_id            = "tb2-path-tracing"
+
+[[arrivals]]
+arrive_wall_time   = 255
+task_id            = "wildclawbench-04_Search_Retrieval_task_2_conflicting_handling"
+
+[[arrivals]]
+arrive_wall_time   = 297
+task_id            = "tb2-compile-compcert"
+
+[[arrivals]]
+arrive_wall_time   = 343
+task_id            = "tb2-winning-avg-corewars"
+
+[[arrivals]]
+arrive_wall_time   = 403
+task_id            = "terminalworld-tw_325403"
+
+[[arrivals]]
+arrive_wall_time   = 463
+task_id            = "skillsbench-syzkaller-ppdev-syzlang"
+
+[[arrivals]]
+arrive_wall_time   = 475
+task_id            = "compilebench-curl-ssl-arm64-static-heavy"
